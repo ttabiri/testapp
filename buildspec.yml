@@ -6,10 +6,10 @@ phases:
       dotnet: 3.1
   build:
     commands:
-      - dotnet test ./src/build/build.csproj
-      - dotnet publish -c release -o ./build_output ./src/build/build.csproj
+      - dotnet test ./build/build.csproj
+      - dotnet publish -c release -o ./build_output ./build/build.csproj
 artifacts:
   files:
-    - src/build/build_output/*
+    - build/build_output/*
     - appspec.yml
     - installApp.sh
