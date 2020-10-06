@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - dotnet test ./src/Conduit/Conduit.csproj
+      - dotnet publish -c release -o ./build_output ./src/Conduit/Conduit.csproj
+artifacts:
+  files:
+    - src/Conduit/build_output/*
+    - appspec.yml
+    - installApp.sh
