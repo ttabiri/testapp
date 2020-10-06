@@ -1,6 +1,9 @@
 version: 0.2
 #comment
 phases:
+  install:
+    runtime-versions:
+      dotnet: 3.0
   build:
     commands:
       - dotnet test ./src/build/build.csproj
