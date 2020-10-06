@@ -12,4 +12,4 @@ artifacts:
   files:
     - build/build_output/*
     - appspec.yml
-    - installApp.sh
+
